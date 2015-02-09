@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.8" icons="true" automaticImage="PNG">  
+  <object id="1" language="java" name="mini.controller.User_controller" project="miniblogtest" 
+    file="/miniblogtest/src/main/java/mini/controller/User_controller.java" binary="false" label="user_controller" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="364" y="0"/>    
+    <execution id="2">      
+      <position height="63" width="112" x="5" y="107"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="63" width="112" x="5" y="267"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="63" width="112" x="5" y="442"/>    
+    </execution>  
+  </object>  
+  <object id="11" language="java" name="mini.service.imp.User_service_imp" project="miniblogtest" 
+    file="/miniblogtest/src/main/java/mini/service/imp/User_service_imp.java" binary="false" label="user_service_imp" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="567" y="0"/>    
+    <execution id="4">      
+      <position height="21" width="127" x="121" y="128"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="63" width="127" x="224" y="173"/>    
+    </execution>    
+    <execution id="7">      
+      <position height="21" width="127" x="224" y="288"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="63" width="127" x="224" y="336"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="21" width="127" x="224" y="463"/>    
+    </execution>    
+    <execution id="18">      
+      <position height="63" width="127" x="224" y="500"/>    
+    </execution>  
+  </object>  
+  <object id="21" language="java" name="mini.dao.imp.userDAOimp" project="miniblogtest" 
+    file="/miniblogtest/src/main/java/mini/dao/imp/userDAOimp.java" binary="false" label="userDAOimp" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="662" y="0"/>    
+    <execution id="14">      
+      <position height="21" width="95" x="433" y="194"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="21" width="95" x="433" y="357"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="21" width="95" x="433" y="521"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="Check_User_Exist(java.lang.String):boolean">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="Check_Email_Exist(java.lang.String):boolean">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="9" operation="Insert_user(mini.model.users):boolean">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="13" operation="get_by_username(java.lang.String):mini.model.users">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="16" operation="get_by_email(java.lang.String):mini.model.users">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="19" operation="save(mini.model.users):void">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>
+</sequence-diagram>

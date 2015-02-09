@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.8" icons="true" automaticImage="PNG">  
+  <object id="1" language="java" name="mini.controller.Comment_controller" project="miniblogtest" 
+    file="/miniblogtest/src/main/java/mini/controller/Comment_controller.java" binary="false" label="comment_controller" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="247" y="0"/>    
+    <execution id="2">      
+      <position height="63" width="140" x="5" y="99"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="63" width="140" x="5" y="269"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="63" width="140" x="5" y="416"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="63" width="140" x="5" y="529"/>    
+    </execution>  
+  </object>  
+  <object id="14" language="java" name="mini.service.imp.Comment_service_imp" project="miniblogtest" 
+    file="/miniblogtest/src/main/java/mini/service/imp/Comment_service_imp.java" binary="false" 
+    label="comment_service_imp" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="535" y="0"/>    
+    <execution id="7">      
+      <position height="21" width="155" x="149" y="290"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="63" width="155" x="149" y="331"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="21" width="155" x="149" y="437"/>    
+    </execution>    
+    <execution id="18">      
+      <position height="63" width="155" x="149" y="475"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="21" width="155" x="149" y="550"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="63" width="155" x="149" y="580"/>    
+    </execution>  
+  </object>  
+  <object id="24" language="java" name="mini.dao.imp.commentDAOimp" project="miniblogtest" 
+    file="/miniblogtest/src/main/java/mini/dao/imp/commentDAOimp.java" binary="false" label="commentDAOimp" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="439" y="0"/>    
+    <execution id="17">      
+      <position height="21" width="123" x="308" y="352"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="21" width="123" x="308" y="496"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="21" width="123" x="308" y="601"/>    
+    </execution>  
+  </object>  
+  <object id="25" language="java" name="mini.service.imp.Token_service_imp" project="miniblogtest" 
+    file="/miniblogtest/src/main/java/mini/service/imp/Token_service_imp.java" binary="false" label="token_service_imp" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="512" y="0"/>    
+    <execution id="4">      
+      <position height="21" width="134" x="435" y="120"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="63" width="134" x="435" y="157"/>    
+    </execution>  
+  </object>  
+  <object id="29" language="java" name="mini.dao.imp.tokenDAOimp" project="miniblogtest" 
+    file="/miniblogtest/src/main/java/mini/dao/imp/tokenDAOimp.java" binary="false" label="tokenDAOimp" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="262" y="0"/>    
+    <execution id="28">      
+      <position height="21" width="101" x="573" y="178"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="Check_access_token(java.lang.String):mini.model.token">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="Get_comment_by_id(int):mini.model.comments">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="9" operation="Get_all_comment_by_userid(int):java.util.List">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="12" operation="Get_all_comment_by_postid(int):java.util.List">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="16" operation="get(int):mini.model.comments">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="19" operation="get_all_comments_by_userId(int):java.util.List">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="22" operation="get_all_comments_by_postId(int):java.util.List">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="27" operation="get_token_by_access_token(java.lang.String):mini.model.token">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="28"/>  
+  </message>
+</sequence-diagram>

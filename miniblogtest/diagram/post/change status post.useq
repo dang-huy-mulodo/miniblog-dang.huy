@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.8" icons="true" automaticImage="PNG">  
+  <object id="1" language="java" name="mini.controller.Post_controller" project="miniblogtest" 
+    file="/miniblogtest/src/main/java/mini/controller/Post_controller.java" binary="false" label="post_controller" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="214" y="0"/>    
+    <execution id="2">      
+      <position height="63" width="111" x="5" y="115"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="63" width="111" x="5" y="261"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="63" width="111" x="5" y="416"/>    
+    </execution>  
+  </object>  
+  <object id="11" language="java" name="mini.service.imp.Post_service_imp" project="miniblogtest" 
+    file="/miniblogtest/src/main/java/mini/service/imp/Post_service_imp.java" binary="false" label="post_service_imp" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="339" y="0"/>    
+    <execution id="7">      
+      <position height="21" width="126" x="120" y="282"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="63" width="126" x="120" y="333"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="21" width="126" x="120" y="437"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="63" width="126" x="120" y="474"/>    
+    </execution>  
+  </object>  
+  <object id="18" language="java" name="mini.dao.imp.postDAOimp" project="miniblogtest" 
+    file="/miniblogtest/src/main/java/mini/dao/imp/postDAOimp.java" binary="false" label="postDAOimp" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="420" y="0"/>    
+    <execution id="14">      
+      <position height="21" width="94" x="250" y="354"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="21" width="94" x="250" y="495"/>    
+    </execution>  
+  </object>  
+  <object id="19" language="java" name="mini.service.imp.Token_service_imp" project="miniblogtest" 
+    file="/miniblogtest/src/main/java/mini/service/imp/Token_service_imp.java" binary="false" label="token_service_imp" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="617" y="0"/>    
+    <execution id="4">      
+      <position height="21" width="134" x="348" y="136"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="63" width="134" x="348" y="178"/>    
+    </execution>  
+  </object>  
+  <object id="23" language="java" name="mini.dao.imp.tokenDAOimp" project="miniblogtest" 
+    file="/miniblogtest/src/main/java/mini/dao/imp/tokenDAOimp.java" binary="false" label="tokenDAOimp" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="497" y="0"/>    
+    <execution id="22">      
+      <position height="21" width="101" x="486" y="199"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="Check_access_token(java.lang.String):mini.model.token">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="Check_post_own(int,int):boolean">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="9" operation="Edit_status_post(mini.resource.form.Post_form):boolean">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="13" operation="get(int):mini.model.posts">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="16" operation="update(mini.model.posts):void">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="21" operation="get_token_by_access_token(java.lang.String):mini.model.token">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>
+</sequence-diagram>

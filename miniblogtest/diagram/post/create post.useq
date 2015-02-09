@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.8" icons="true" automaticImage="PNG">  
+  <object id="1" language="java" name="mini.controller.Post_controller" project="miniblogtest" 
+    file="/miniblogtest/src/main/java/mini/controller/Post_controller.java" binary="false" label="post_controller" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="167" y="0"/>    
+    <execution id="2">      
+      <position height="63" width="111" x="5" y="131"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="63" width="111" x="5" y="263"/>    
+    </execution>  
+  </object>  
+  <object id="8" language="java" name="mini.service.imp.Post_service_imp" project="miniblogtest" 
+    file="/miniblogtest/src/main/java/mini/service/imp/Post_service_imp.java" binary="false" label="post_service_imp" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="314" y="0"/>    
+    <execution id="7">      
+      <position height="21" width="126" x="120" y="284"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="63" width="126" x="120" y="313"/>    
+    </execution>  
+  </object>  
+  <object id="12" language="java" name="mini.dao.imp.postDAOimp" project="miniblogtest" 
+    file="/miniblogtest/src/main/java/mini/dao/imp/postDAOimp.java" binary="false" label="postDAOimp" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="304" y="0"/>    
+    <execution id="11">      
+      <position height="21" width="94" x="250" y="334"/>    
+    </execution>  
+  </object>  
+  <object id="13" language="java" name="mini.service.imp.Token_service_imp" project="miniblogtest" 
+    file="/miniblogtest/src/main/java/mini/service/imp/Token_service_imp.java" binary="false" label="token_service_imp" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="551" y="0"/>    
+    <execution id="4">      
+      <position height="21" width="134" x="348" y="152"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="63" width="134" x="348" y="191"/>    
+    </execution>  
+  </object>  
+  <object id="17" language="java" name="mini.dao.imp.tokenDAOimp" project="miniblogtest" 
+    file="/miniblogtest/src/main/java/mini/dao/imp/tokenDAOimp.java" binary="false" label="tokenDAOimp" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="431" y="0"/>    
+    <execution id="16">      
+      <position height="21" width="101" x="486" y="212"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="Check_access_token(java.lang.String):mini.model.token">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="Create_post(mini.model.posts):boolean">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="10" operation="save(mini.model.posts):void">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="15" operation="get_token_by_access_token(java.lang.String):mini.model.token">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>
+</sequence-diagram>
